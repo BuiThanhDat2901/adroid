@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:text="Demo"
+        android:textColor="#0288D1"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageBox"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/title"
+        android:src="@drawable/img_1"/>
+
+
+
+    <TextView
+        android:id="@+id/gameName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Byrdie" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameName"
+        android:layout_marginLeft="100dp"
+        android:textSize="15dp"
+        android:textColor="#787878"
+        android:layout_marginTop="15dp"
+        android:text="10 phút trước" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:textSize="15dp"
+        android:textColor="#787878"
+        android:layout_marginTop="20dp"
+        android:text="Pokemon go thu về 2 tỷ đô" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="14dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_2" />
+
+    <TextView
+        android:id="@+id/nameVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:textSize="20dp"
+        android:textColor="#3A3939"
+        android:layout_marginTop="10dp"
+        android:text="Doanh thu pokemon go" />
+
+    <TextView
+        android:id="@+id/descriptionVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameVideo"
+        android:textSize="10dp"
+        android:textColor="#3A3939"
+        android:layout_marginTop="10dp"
+        android:text="dantri.com.vn" />
+    <View
+        android:id="@+id/textCustom"
+        android:layout_below="@+id/descriptionVideo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"/>
+
+    <GridLayout
+        android:id="@+id/gridCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textCustom"
+        android:layout_gravity="center"
+        android:layout_marginLeft="90dp"
+        android:columnCount="3"
+        android:rowCount="1">
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginTop="10dp"
+            android:text="LIKE"
+            android:textColor="#3A3939"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginTop="10dp"
+            android:text="COMMENT"
+            android:textColor="#3A3939"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginTop="10dp"
+            android:text="SHARE"
+            android:textColor="#3A3939"
+            android:textSize="10dp" />
+
+    </GridLayout>
+
+    <View
+        android:id="@+id/textCustom1"
+        android:layout_below="@+id/gridCustom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"/>
+
+</RelativeLayout>
